@@ -3,10 +3,17 @@
 import os
 
 f=os.fork()
-print(f)
+#print(type(f))
+#print(f)
+
+# if f == 0:
+#   print("Executing from child process")
+# else:
+#   print("Executing from parent process")
 
 if f == 0:
-  print("Executing from child process")
+  print("value of f is ",f)
+  print("This is Child process")
 else:
-  print("Executing from parent process")
-
+  print("Value of  f is ",f)
+  print("This is parent process")
