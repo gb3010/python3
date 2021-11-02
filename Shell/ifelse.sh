@@ -1,8 +1,8 @@
-read -p "Enter the value: " input ;
-if [[ $input == "dry run" ]]
+
+if [[ $ACTION == "dry run" ]]
   then
     echo "dry run"
-elif [[ $input == "terminate" ]]
+elif [[ $ACTION == "terminate" ]]
   then
     echo "terminate"
 fi
